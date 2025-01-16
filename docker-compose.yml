@@ -15,9 +15,6 @@ services:
     volumes:
       - rabbitmq_data:/var/lib/rabbitmq
       - ./rabbitmq-plugins.conf:/etc/rabbitmq/enabled_plugins
-    command: >
-      sh -c "rabbitmq-plugins enable rabbitmq_mqtt
-             && rabbitmq-server"
 
 volumes:
   rabbitmq_data:
